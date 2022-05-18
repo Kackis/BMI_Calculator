@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header >
+        <h3>Kalkulator BMI</h3>
+    </header>
+    <main >
+        <article id="container">
+            <!--Formularz-->
+            <form class="BMI_form">
+                <h4>Wpisz swoje dane: </h4>
+                <!-- Imię i nazwisko użytkownika-->
+                <div class="title">
+                    <label>Imię:</label>
+                    <input type="text" name="first_name" required="required"> <br>   
+                </div>
+                <div class="title">
+                    <label>Nazwisko:</label>
+                    <input type="text" name="surname" required="required"><br>   
+                </div>
+                
+                <!-- Dane do obliczenia BMI-->
+                <div class="title">
+                    <label>Wzrost:</label>
+                    <input type="number" name="height" required="required"/> <br>
+                </div>
+                <div class="title">
+                    <label>Waga:</label>
+                    <input type="number" name="weight" required="required"/> <br>    
+                </div>
+
+                <!-- Przycisk prześlij-->
+                <div>
+                    <button id="submit" > Wyślij</button>
+                </div>
+            </form>
+            
+            <img class="BMI_chart" src="images/Body mass index.png" alt="Tabela BMI"></a>
+            
+            <!--Wyniki-->
+            <section class="BMI_results">
+                <h4>Uzyskane wyniki: </h4>
+                <p id="1st-header">Imie i nazwisko:</p> 
+                <p id="person_data"></p>
+                <p id="2nd-header">BMI wartość:</p>
+                <p id="BMI_value"></p>   
+                <p id="3rd-header">Twój status:</p><br>  
+                <p id="BMI_status"></p>
+            </section>
+        </article>
+        
+    </main>
+    <footer >
+
+    </footer>
+    <script src="jss\script.js" type="text/javascript"></script>
+</body>
+</html>
